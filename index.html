@@ -4,119 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laundry Wallah / Laundry Mart</title>
-    <style>
-        body {
-            font-family: "Times New Roman", Times, serif;
-            margin: 20px;
-            color: #000;
-        }
-        h1 {
-            font-size: 2em;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        h2 {
-            font-size: 1.5em;
-            font-weight: bold;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        p {
-            margin-bottom: 15px;
-            line-height: 1.4;
-        }
-        table {
-            border-collapse: separate;
-            border: 1px solid gray;
-            border-spacing: 2px;
-        }
-        th, td {
-            border: 1px solid gray;
-            padding: 3px 10px;
-            text-align: left;
-        }
-        th {
-            font-weight: bold;
-            text-align: center;
-        }
-        /* Form styling */
-        .form-group {
-            margin-bottom: 10px;
-        }
-        label {
-            margin-right: 5px;
-        }
-        input {
-            margin-right: 15px;
-        }
-        .footer {
-            margin-top: 20px;
-            font-size: 0.9em;
-        }
-        .laundry-image {
-            width: 200px; 
-            height: auto;
-            display: block;
-            margin-bottom: 20px;
-        }
-    </style>
 </head>
 <body>
 
-    <h1>Welcome to Laundry Wallah / Laundry Mart</h1>
+    <header>
+        <h1>Welcome to Laundry Wallah / Laundry Mart</h1>
+    </header>
 
-    <p>Welcome to Laundry Wallah / Laundry Mart, your one-stop solution for all your laundry needs. Our dedicated team ensures top-notch service, providing a hassle-free and efficient laundry experience. With a focus on quality and customer satisfaction, we take care of your garments as if they were our own.</p>
+    <section>
+        <p>
+            Welcome to Laundry Wallah / Laundry Mart, where we redefine the meaning of clean. 
+            We understand that your clothes are an investment, and our dedicated team of professionals 
+            is committed to treating them with the utmost care and respect. Using state-of-the-art 
+            technology and eco-friendly detergents, we ensure that every garment comes back to you 
+            looking fresh, smelling great, and feeling brand new. Whether you are a busy professional, 
+            a student, or running a household, our reliable and efficient services are designed to 
+            save you time and hassle. Experience the difference with our premium laundry solutions today.
+        </p>
+    </section>
 
-    <img src="https://cdn-icons-png.flaticon.com/512/2097/2097336.png" alt="Washing machine illustration" class="laundry-image">
+    <section>
+        <img src="https://images.unsplash.com/photo-1545173168-9f1947eebb8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Laundry Service Interior" width="500">
+    </section>
 
-    <h2>Our Services</h2>
-    <ul>
-        <li>Washing and Drying</li>
-        <li>Ironing and Folding</li>
-        <li>Dry Cleaning</li>
-        <li>Stain Removal</li>
-        <li>Express Services</li>
-        <li>Special Garment Care</li>
-        <li>And more...</li>
-    </ul>
+    <section>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Washing and Drying</li>
+            <li>Ironing and Folding</li>
+            <li>Dry Cleaning</li>
+            <li>Stain Removal</li>
+            <li>Express Services</li>
+            <li>Special Garment Care</li>
+            <li>Leather and Suede Cleaning</li>
+            <li>Curtain and Carpet Cleaning</li>
+        </ul>
+    </section>
 
-    <h2>Price List</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Service</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Washing and Drying</td>
-                <td>$10.00</td>
-            </tr>
-            <tr>
-                <td>Ironing and Folding</td>
-                <td>$5.00</td>
-            </tr>
-        </tbody>
-    </table>
+    <section>
+        <h2>Price List</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Washing and Drying</td>
+                    <td>Rs 10.00</td>
+                </tr>
+                <tr>
+                    <td>Ironing and Folding</td>
+                    <td>Rs 5.00</td>
+                </tr>
+                <tr>
+                    <td>Dry Cleaning (Shirt)</td>
+                    <td>Rs 50.00</td>
+                </tr>
+                <tr>
+                    <td>Dry Cleaning (Suit)</td>
+                    <td>Rs 200.00</td>
+                </tr>
+                <tr>
+                    <td>Stain Removal</td>
+                    <td>Rs 30.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-    <h2>Book Now</h2>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+    <section>
+        <h2>Book Now</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter full name" minlength="3" required><br><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
 
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="10 digit number" pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number" required><br><br>
 
-        <input type="submit" value="Submit">
-    </form>
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
 
-    <div class="footer">
-        Contact us at: info@laundrymart.com
-    </div>
+    <footer>
+        <p>Contact us at: info@laundrymart.com</p>
+    </footer>
 
 </body>
 </html>
